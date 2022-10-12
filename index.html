@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <div class="heading">
+        <h1>BMI Calculator</h1>
+    </div>
+
+    <section id="bmi">
+        <div class="row row1">
+            <div class="label">
+                <label for="units">Units</label>
+            </div>
+            <div class="options">
+                <select name="unit_choice" id="unit_choice" onchange="choice()">
+                    <option value="standard" selected>Standard</option>
+                    <option value="meter">Meter</option>
+                </select>
+            </div>
+
+
+            <div class="unit_name unit_name1"></div>
+        </div>
+        <div class="row row2">
+            <div class="label">
+                <label for="units">Weight</label>
+            </div>
+            <div class="options weight_input">
+                <input type="number" value="1" min="1" max="500" name="weight" id="weight_input" onchange="choice()">
+            </div>
+
+
+            <div class="unit_name unit_name2">
+                pounds
+            </div>
+        </div>
+        <div class="row row3">
+            <div class="label">
+                <label for="units">Height</label>
+            </div>
+            <div class="options">
+                <input type="number" name="height" id="height_input" value="1" min="1" max="9" onchange="choice()">
+                <input type="number" name="height" id="point_input" value="0" min="0" max="99" onchange="choice()">
+            </div>
+
+
+            <div class="unit_name unit_name3">
+                <span class="uspan1">Feet</span>
+                <span class="uspan2">Inch</span>
+            </div>
+        </div>
+
+
+        <section id="result">
+            <div class="label_result">
+                Your BMI
+            </div>
+            <div class="result_show">
+                0
+            </div>
+        </section>
+        <section id="comment">
+            <div class="comment">
+                <p class="com_para">Enter your measures!</p>
+            </div>
+        </section>
+    </section>
+
+    
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
